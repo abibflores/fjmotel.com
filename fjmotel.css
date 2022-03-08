@@ -1,0 +1,236 @@
+.inicio{
+    background-image: url("fjmotel_img/bg8.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.vinculos{
+    margin: 20px 10px;
+}
+.centrar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.nosotros1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nosotros2{
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.nosotros3{
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.habitaciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.dos_columnas{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.una_columna{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+}
+.button{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+.button01{
+    background: blue;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 10px;
+    color: black;
+    box-shadow: 5px 3px #ACB992;
+}
+.servicios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    background-image: url("fjmotel_img/10.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.servicios01{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    margin: 20px;
+}
+.img_border{
+    display: flex;
+    border: 2px #F473B9 solid;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    justify-content: center;
+    align-items: center;
+}
+.comentarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: black;
+    color: white;
+}
+.footer1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 20%;
+}
+h1{
+    color: white;
+    margin: 0px 10px;
+}
+a{
+    margin: 0px 2px;
+}
+.galeria{
+    margin: 5px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.servicios01:hover .img_border{
+    background: #F473B9;
+}
+
+.container {
+    position: relative;
+    margin: 40px auto;
+    width: 95%;
+    display: flex;
+    padding: 20px 10px;
+  }
+  
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ececec;
+    cursor: pointer;
+  }
+  
+  .wrap {
+    position: relative;
+    margin: 10px auto;
+    width: 95%;
+    display: flex;
+    padding: 20px 10px;
+    margin: 0px 0px 260px 0px;
+  }
+  
+  .item {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    flex-shrink: 0;
+    width: 400px;
+    height: 250px;
+    margin: 0 5px 0 0;
+  }
+  
+  [position] span {
+    background-color: yellowgreen;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    z-index: -1;
+    transform: translateX(0) scale(0.5);
+    opacity: 0;
+    transition: 1.3s;
+  }
+  
+  [position="1"] {
+    z-index: 98;
+  }
+  [position="1"] span {
+    transform: translateX(-90%) scale(0.5);
+    opacity: 1;
+  }
+  .wrap--half [position="1"] span {
+    transform: translateX(0) scale(0.5);
+    opacity: 0;
+  }
+  
+  [position="2"] {
+    z-index: 99;
+  }
+  [position="2"] span {
+    transform: translateX(-55%) scale(0.7);
+    opacity: 1;
+  }
+  
+  [position="3"] {
+    z-index: 100;
+  }
+  [position="3"] span {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+  
+  [position="4"] {
+    z-index: 99;
+  }
+  [position="4"] span {
+    transform: translateX(55%) scale(0.7);
+    opacity: 1;
+  }
+  
+  [position="5"] {
+    z-index: 98;
+  }
+  [position="5"] span {
+    transform: translateX(90%) scale(0.5);
+    opacity: 1;
+  }
+  .wrap--half [position="5"] span {
+    transform: translateX(0) scale(0.5);
+    opacity: 0;
+  }

@@ -1,269 +1,378 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>FJ Motel - Bienvenidos</title>
-        <!-- información para navegador -->
-        <style>
-            /* todo css */
-        </style>
-    </head>
-    <body>
-        <!-- todo lo que el usuario ve -->
-        <header>
-            <nav>
-                <a href="#home">FJ MOTEL</a> |
-                <a href="#nosotros">NOSOTROS</a> |
-                <a href="#habitaciones">HABITACIONES</a> |
-                <a href="#contacto">CONTACTO</a>
-                <a href="#galeria">GALERIA</a>
-            </nav>
-        </header>
-        <div id="home">
-            <img src="./public/fjmotel.jpeg" alt="imagen del motel">
-            <span>Un espacio impecable</span>
-            <p>Disfruta plenamente esos mágicos momentos</p>
-            <a>Sanitización antes y después del servicio</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fjmotel.css">
+    <link rel="" href="fjmotel.js">
+</head>
+<body>
+    <section class="inicio">
+        <nav class="menu">
+            <div>
+                <h1>
+                    FJMotel
+                </h1>
+            </div>
+            <div class="vinculos">
+               <a href="">
+                Inicio
+            </a>
+            <a href="">
+                Nosotros
+            </a>
+            <a href="">
+                Habitaciones
+            </a>
+            <a href="">
+                Servicios
+            </a>
+            <a href="">
+                Galeria
+            </a>
+            <a href="">
+                Contactanos
+            </a>  
+            </div>
+        </nav>
+        <div class="centrar">
+          <h3>
+            Un epacio seguro
+        </h3>
+        <p>
+            Disfruta plenamente esos magicos momentos
+        </p>
+        <p class="fondo-rosa">
+            SANITIZACION ANTES Y DESPUES DEL SERVICIO
+        </p>  
         </div>
-        <div id="nosotros">  
-            <img src="./public/FJMOTEL_01.jpg" alt="imagen nosotros">
-            <span> Nuestra razon de ser</span>
-            <p>ACERCA DE NOSOTROS</p> 
-            <p>Somos una empresa con amplia experciencia en la atención y 
-                el servicio al cliente y donde nuestra razón de ser es la calidad 
-                y la excelencia.
-
-                Nuestro concepto de autohotel es moderno, seguro y exclusivo, brindándole 
-                detalles de primer nivel en alimentos, bebidas, limpieza y desinfección con 
-                un diseño único y comodidad inigualable para que disfrute plenamente de ese 
-                momento mágico e inolvidable. </p>
+    </section>
+    <section class="habitaciones">
+        <div>
+            <h2>Habitaciones</h2>
         </div>
-        <div id="habitaciones"> 
-            <img src="./public/FJMOTEL_02.jpg" alt="imagen habitacion 1">
-            <img src="./public/FJMOTEL_02.jpg" alt="imagen habitacion 2">
-            <p>Habitación Estándar</p> 
-            <p>20 cómodas, prácticas e impecables habitaciones 
-                con todos los servicios: internet, agua caliente, 
-                servicio de cable, frigobar, extensión telefónica y más.</p> 
-            <p>Un privado e íntimo espacio para 
-                celebrar en grande esos momentos que 
-                perdurarán para siempre.</p> 
-            <p>Master Suite</p> 
-            <p>Exclusiva y elegante suite con 
-                detalles y diseños para que disfrute 
-                de inolvidables momentos.</p> 
-            <p>Amenidades como tina de baño, amplios y 
-                cómodos espacios, servi-bar, doble 
-                estaciomiento privado, calefacción, cable y mucho más.</p> 
-            <p>Un exclusivo espacio para disfrutar de una velada 
-                mágica e inolvidable.</p> 
-            <button type="button">sanitizacion antes y despues del servicio</button>
-            <button type="button">video 1</button>
+        <div class="dos_columnas">
+            <div class="una_columna">
+                <img src="fjmotel_img/11.jpg" alt="img habitacion " width="600px" height="350px">
+                <h3>
+                    Habitación Estándar
+                </h3>
+                <p>
+                    20 cómodas, prácticas e impecables habitaciones con todos los servicios: internet, agua caliente, servicio de cable, frigobar, extensión telefónica y más.
+                </p>
+                <p>
+                    Un privado e íntimo espacio para celebrar en grande esos momentos que perdurarán para siempre.
+                </p>
+            </div>
+            <div class="una_columna">
+                <img src="fjmotel_img/2.jpg" alt="img habitacion " width="600px" height="350px">
+                <h3>
+                    Master Suite
+                </h3>
+                <p>
+                    Exclusiva y elegante suite con detalles y diseños para que disfrute de inolvidables momentos.
+                </p>
+                <p>
+                    Amenidades como tina de baño, amplios y cómodos espacios, servi-bar, doble estaciomiento privado, calefacción, cable y mucho más.
+                </p>
+                <p>
+                    Un exclusivo espacio para disfrutar de una velada mágica e inolvidable.
+                </p>
+            </div>
         </div>
-        
-        <div> 
-            <img src="./public/icon-foods.png" alt="imagen comida">
-            <p>DELICIOSOS SNACKS</p>
-            <p>Para acompañar y deleitar su paladar, 
-                le ofrecemos frescos y deliciosos platillos 
-                preparados con los más altos estándares de higiene y 
-                productos de la mejor calidad.</p>
+        <div class="button">
+            <button class="button01" type="button">SANITIZACION ANTES Y DESPUES DEL SERVICIO</button>
+            <button class="button01" type="button">VIDEO 1</button>
         </div>
-        
-        <div> 
-            <img src="./public/icon-events.png" alt="imagen vino">
-            <p>CAVA DE VINOS</p>
-            <p>Contamos con una exclusiva variedad de 
-                vinos y bebidas para acompañar y celebrar como se merece.</p>
+    </section>
+    <section class="nosotros">
+        <div class="nosotros1">
+            <div>
+                <img src="fjmotel_img/17.jpg" alt="img-habitación" width="700px" height="400px">
+            </div>
+            <div class="nosotros3">
+                <h2>
+                    Nuestra razon de ser
+                </h2>
+                <p>
+                    ACERCA DE NOSOTROS
+                </p>
+                <p>
+                    Somos una empresa con amplia experciencia en la atención y el servicio al cliente y donde nuestra razón de ser es la calidad y la excelencia.
+                </p>
+                <p>
+                    Nuestro concepto de autohotel es moderno, seguro y exclusivo, brindándole detalles de primer nivel en alimentos, bebidas, limpieza y desinfección con un diseño único y comodidad inigualable para que disfrute plenamente de ese momento mágico e inolvidable.
+                </p>
+            </div>
         </div>
-        
-        <div> 
-            <img src="./public/icon-order.png" alt="room service">
-            <p>ROOM SERVICE</p>
-            <p>Para su comodidad y tranquilidad, 
-                ponemos a su disposición nuestro servicio de 
-                room-service las 24 horas del día, con la calidad y la 
-                atención que usted y su pareja merecen.</p>
+        <div class="nosotros2">
+            <div>
+                <h2>
+                    Nuestro equipo
+                </h2>
+                <p>
+                    CONOCE A LOS EXPERTOS
+                </p>
+            </div>
+            <div class="nosotros1">
+                <div class="nosotros3">
+                    <h2>
+                        Un equipo comprometido y listo para recibirle
+                    </h2>
+                    <p>
+                        Es un placer recibir a nuestros clientes y que disfruten cada uno de los detalles que preparamos para Usted.
+                    </p>
+                    <p>
+                        Nuestros altos estándares de calidad y protocolos de limpieza le hará sentir cómodos, seguros y tranquilos. 
+                    </p>
+                </div>
+                <div>
+                    <img src="fjmotel_img/chef-01.jpg" alt="" width="760px" height="464px">
+                </div>
+            </div>
         </div>
-        
-        <div> 
-            <img src="./public/icon-delivery.png" alt="imagen limpieza">
-            <p>LIMPIEZA PROFUNDA Y DESINFECCIÓN</p>
-            <p>Para su tranquilidad le ofrecemos un 
-                servicio de limpieza profunda y desinfección 
-                después de cada visita, para asegurar que todo el 
-                mobiliario y espacios esten completamente sanitizados..</p>
+    </section>
+    <section class="servicios">
+        <div class="servicios01">
+            <div class="img_border">
+                <img src="fjmotel_img/icon-foods.png" alt="">
+            </div>
+            <div>
+                <h2>
+                    DELICIOSOS SNACKS
+                </h2>
+                <p>
+                    Para acompañar y deleitar su paladar, le ofrecemos frescos y deliciosos platillos preparados con los más altos estándares de higiene y productos de la mejor calidad.
+                </p>
+            </div>
+        </div>
+        <div class="servicios01">
+            <div class="img_border">
+                <img src="fjmotel_img/icon-events.png" alt="">
+            </div>
+            <div>
+                <h2>
+                    CAVA DE VINOS
+                </h2>
+                <p>
+                    Contamos con una exclusiva variedad de vinos y bebidas para acompañar y celebrar como se merece.
+                </p>
+            </div>
+        </div>
+        <div class="servicios01">
+            <div class="img_border">
+                <img src="fjmotel_img/icon-order.png" alt="">
+            </div>
+            <div>
+                <h2>
+                    ROOM SERVICE
+                </h2>
+                <p>
+                    Para su comodidad y tranquilidad, ponemos a su disposición nuestro servicio de room-service las 24 horas del día, con la calidad y la atención que usted y su pareja merecen.
+                </p>
+            </div>
+        </div>
+        <div class="servicios01">
+            <div class="img_border">
+                <img src="fjmotel_img/icon-delivery.png" alt="">
+            </div>
+            <div>
+                <h2>
+                    LIMPIEZA PROFUNDA Y DESINFECCIÓN
+                </h2>
+                <p>
+                    Para su tranquilidad le ofrecemos un servicio de limpieza profunda y desinfección después de cada visita, para asegurar que todo el mobiliario y espacios esten completamente sanitizados.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="galeria">
+        <div>
+            <h2>Galeria</h2>
+        </div>
+        <div class="container">
+            <!--   <span class="btn" data-action="left">left</span> -->
+            <div class="wrap">
+                <div class="item item-18">
+                    <span><img src="fjmotel_img/10.jpg" alt="" width="650px" height="450px"></span>
+                </div>
+                <div class="item item-19">
+                    <span><img src="fjmotel_img/bg8.jpg" alt="" width="650px" height="450px"></span>
+                </div>  
+                <div class="item item-1">
+                  <span><img src="fjmotel_img/1.jpg" alt="" width="650px" height="450px"></span>
+                </div>
+                <div class="item item-2">
+                    <span><img src="fjmotel_img/2(1).jpg" alt="" width="650px" height="450px"></span>
+                </div>
+                <div class="item item-3">
+                    <span><img src="fjmotel_img/6.jpg" alt="" width="650px" height="450px"></span>
+                </div>
+                <div class="item item-4">
+                    <span><img src="fjmotel_img/9.jpg" alt="" width="650px" height="450px"></span>
+                </div>
+                <div class="item item-5">
+                    <span><img src="fjmotel_img/8.jpg" alt="" width="650px" height="450px"></span>
+                </div>
+                <div class="item item-6">
+                    <span><img src="fjmotel_img/7.jpg" alt="" width="650px" height="450px"></span>
+                </div>
+                <div class="item item-7">
+                    <span><img src="fjmotel_img/17.jpg" alt="" width="650px" height="450px"></span>
+                </div>
+                <div class="item item-8">
+                    <span><img src="fjmotel_img/13.jpg" alt="" width="650px" height="450px"></span>
+                </div>
+                <div class="item item-9">
+                    <span><img src="fjmotel_img/11.jpg" alt="" width="650px" height="450px"></span>
+                </div>
+                <div class="item item-10">
+                    <span><img src="fjmotel_img/20.jpg" alt="" width="650px" height="450px"></span>
+                </div>
+                <div class="item item-11">
+                    <span><img src="fjmotel_img/18.jpg" alt="" width="650px" height="450px"></span>
+                </div>
+                <div class="item item-12">
+                    <span><img src="fjmotel_img/14.jpg" alt="" width="650px" height="450px"></span>
+                </div>
+                <div class="item item-13">
+                    <span><img src="fjmotel_img/3(1).jpg" alt="" width="650px" height="450px"></span>
+                </div>
+                <div class="item item-14">
+                    <span><img src="fjmotel_img/5.jpg" alt="" width="650px" height="450px"></span>
+                </div>
+                <div class="item item-15">
+                    <span><img src="fjmotel_img/15.jpg" alt="" width="650px" height="450px"></span>
+                </div>
+                <div class="item item-16">
+                    <span><img src="fjmotel_img/19.jpg" alt="" width="650px" height="450px"></span>
+                </div>
+                <div class="item item-17">
+                    <span><img src="fjmotel_img/16.jpg" alt="" width="650px" height="450px"></span>
+                </div>
+            </div>
+            <!-- <span class="btn" data-action="right">right</span> -->
+            </div>
+    </section>
+    <section class="comentarios">
+        <div>
+            <h2>
+                Opiniones
+            </h2>
+            <p>¿QUE OPINAN NUESTROS CLIENTES?</p>
         </div>
         <div>
-            <span> Nuestro equipo</span>
-            <span> CONOCE A LOS EXPERTOS</span>
-            <span> Un equipo comprometido y listo para recibirle</span>
-            <p>Es un placer recibir a nuestros clientes y que disfruten cada uno de 
-                los detalles que preparamos para usted.</p>
-            <p>Nuestros altos estándares de calidad y 
-                protocolos de limpieza le hará sentir cómodos, seguros y tranquilos.</p>
-            <span> FJ MOTEL</span>
-            <img src="./public/chef-01.jpg" alt="imagen limpieza">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quaerat neque placeat est, ducimus ratione autem sapiente quisquam in unde non minima accusantium, cumque consequuntur! Impedit perspiciatis voluptas autem odio!
+            </p>
         </div>
-                <div id="galeria">
-                    <div>
-                        <h2>Descubra nuestras instalaciones</h2>
-                        <span>TOTALMENTE PENSADAS EN USTEDES</span>
-                    </div>
-                
-                    <div class="galeri-container">
-                        <div class="item-galeria">
-                            <img src="./public/1.jpeg" />
-                            <div>
-                                <button>+</button>
-                                <span>una experiencia diferente</span>
-                            </div>
-                        </div>
-                        <div class="item-galeria">
-                            <img src="./public/2.jpeg" />
-                            <div>
-                                <button>+</button>
-                                <span>una experiencia diferente</span>
-                            </div>
-                        </div>
-                        <div class="item-galeria">
-                            <img src="./public/3.jpeg" />
-                            <div>
-                                <button>+</button>
-                                <span>una experiencia diferente</span>
-                            </div>
-                        </div>
-                        <div class="item-galeria">
-                            <img src="./public/4.jpeg" />
-                            <div>
-                                <button>+</button>
-                                <span>una experiencia diferente</span>
-                            </div>
-                        </div>
-                        <div class="item-galeria">
-                            <img src="./public/5.jpeg" />
-                            <div>
-                                <button>+</button>
-                                <span>una experiencia diferente</span>
-                            </div>
-                        </div>
-                        <div class="item-galeria">
-                            <img src="./public/6.jpeg" />
-                            <div>
-                                <button>+</button>
-                                <span>una experiencia diferente</span>
-                            </div>
-                        </div>
-                        <div class="item-galeria">
-                            <img src="./public/7.jpeg" />
-                            <div>
-                                <button>+</button>
-                                <span>una experiencia diferente</span>
-                            </div>
-                        </div>
-                        <div class="item-galeria">
-                            <img src="./public/8.jpeg" />
-                            <div>
-                                <button>+</button>
-                                <span>una experiencia diferente</span>
-                            </div>
-                        </div>
-                        <div class="item-galeria">
-                            <img src="./public/9.jpeg" />
-                            <div>
-                                <button>+</button>
-                                <span>una experiencia diferente</span>
-                            </div>
-                        </div>
-                        <div class="item-galeria">
-                            <img src="./public/10.jpeg" />
-                            <div>
-                                <button>+</button>
-                                <span>una experiencia diferente</span>
-                            </div>
-                        </div>
-                        <div class="item-galeria">
-                            <img src="./public/11.jpeg" />
-                            <div>
-                                <button>+</button>
-                                <span>una experiencia diferente</span>
-                            </div>
-                        </div>
-                        <div class="item-galeria">
-                            <img src="./public/12.jpeg" />
-                            <div>
-                                <button>+</button>
-                                <span>una experiencia diferente</span>
-                            </div>
-                        </div>
-                        <div class="item-galeria">
-                            <img src="./public/13.jpeg" />
-                            <div>
-                                <button>+</button>
-                                <span>una experiencia diferente</span>
-                            </div>
-                        </div>
-                        <div class="item-galeria">
-                            <img src="./public/14.jpeg" />
-                            <div>
-                                <button>+</button>
-                                <span>una experiencia diferente</span>
-                            </div>
-                        </div>
-                        <div class="item-galeria">
-                            <img src="./public/15.jpeg" />
-                            <div>
-                                <button>+</button>
-                                <span>una experiencia diferente</span>
-                            </div>
-                        </div>
-                        <div class="item-galeria">
-                            <img src="./public/16.jpeg" />
-                            <div>
-                                <button>+</button>
-                                <span>una experiencia diferente</span>
-                            </div>
-                        </div>
-                        <div class="item-galeria">
-                            <img src="./public/17.jpeg" />
-                            <div>
-                                <button>+</button>
-                                <span>una experiencia diferente</span>
-                            </div>
-                        </div>
-                        <div class="item-galeria">
-                            <img src="./public/18.jpeg" />
-                            <div>
-                                <button>+</button>
-                                <span>una experiencia diferente</span>
-                            </div>
-                        </div>
-                        <div class="item-galeria">
-                            <img src="./public/19.jpeg" />
-                            <div>
-                                <button>+</button>
-                                <span>una experiencia diferente</span>
-                            </div>
-                        </div>
-                        <div class="item-galeria">
-                            <img src="./public/20.jpeg" />
-                            <div>
-                                <button>+</button>
-                                <span>una experiencia diferente</span>
-                            </div>
-                        </div>
-                        <div class="item-galeria">
-                            <img src="./public/21.jpeg" />
-                            <div>
-                                <button>+</button>
-                                <span>una experiencia diferente</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        <script>
-            // codigo javascript
-        </script>
-    </body>
-    
+    </section>
+    <section class="footer">
+        <div class="footer1">
+            <h2>
+                Dirección
+            </h2>
+            <p>
+                Av. Las Torres 3646. Barrio de la Consepción, San Mateo Atenco
+            </p>
+        </div>
+        <div class="footer1">
+            <h2>
+                Horario
+            </h2>
+            <p>
+                Lunes - Domingo (24 horas)
+            </p>
+        </div>
+        <div class="footer1">
+            <h2>
+                Contacto 
+            </h2>
+            <p>
+                (728) 690.1760, (728) 688.2177 
+            </p>
+            <p>
+                info@fjmotel.com
+            </p>
+        </div>
+    </section>
+    <script>
+        const Direction = {
+    left: `left`,
+    right: `right`,
+  }
+  let items = document.querySelectorAll(`.item`);
+  let maxLength = items.length;
+  let slideWrapper = document.querySelector(`.wrap`);
+  let leftButton = `<button type="button" class="custom-arrows custom-arrows--disappearing custom-arrows--prev" data-action="left"><<<</button>`;
+  let rightButton = `<button type="button" class="custom-arrows custom-arrows--disappearing custom-arrows--next" data-action="right">>>></button>`;
+  
+  console.log(maxLength);
+  // document.querySelector(`.item-1`).innerHTML = maxLength;
+  if (maxLength > 5) {
+  
+    slideWrapper.insertAdjacentHTML('beforebegin',leftButton);
+    slideWrapper.insertAdjacentHTML('afterend',rightButton);
+  
+  
+    document.addEventListener(`click`, (evt) => {
+      let eventTarget = evt.target;
+     
+      if(eventTarget.classList.contains(`custom-arrows`)) {
+        nextSlide(eventTarget.getAttribute(`data-action`));
+      } 
+      const sliderContainer = eventTarget;
+      const data = {"event":"command","func":"pauseVideo","args":""};
+      const message = JSON.stringify(data);
+  
+      if (sliderContainer.querySelector(`.boom iframe`)) {
+        document.querySelector(`iframe [position="5"]`).contentWindow.postMessage(message, '*');
+      }
+    })
+  
+  }
+  // инициализация позиций слайдов
+  items.forEach((it, index) => {
+    it.setAttribute(`position`, index + 1)
+    it.addEventListener("click", (event) => {
+        nextSlide(event.getAttribute(`data-action`));
+    })
+  })
+  // setTimeout(() => {
+  //   items.forEach((it, index) => {
+  //   it.setAttribute(`position`, index + 2)
+  // })
+  // }, 5000)
+  
+  function nextSlide(direction) {
+    console.log(direction);
+    if (Direction.right === direction) {
+      items.forEach((it, index) => {
+        let prevValue = +it.getAttribute(`position`);
+        let nextValue = prevValue - 1 < 1 ? 19 : prevValue - 1;
+        it.setAttribute(`position`, nextValue);
+      })
+    } else {
+      items.forEach((it, index) => {
+        let prevValue = +it.getAttribute(`position`);
+        let nextValue = prevValue + 1 > maxLength ? 1 : prevValue + 1;
+        it.setAttribute(`position`, nextValue);
+      })
+    }
+    // items.forEach((it, index) => {
+    //   let prevValue = +it.getAttribute(`position`);
+    //   let nextValue = prevValue + 1 > maxLength ? 1 : prevValue + 1;
+    //   it.setAttribute(`position`, nextValue) 
+    // })
+    // setTimeout(() => {
+    //   return nextSlide();
+    // }, 2500)
+  }
+  let rightClick = function() {
+  
+  }
+    </script>
+</body>
 </html>

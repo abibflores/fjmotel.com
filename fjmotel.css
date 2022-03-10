@@ -1,23 +1,103 @@
+body{
+  font-family: 'Roboto Slab', serif;
+  margin: 0px;
+  background-image: url("fjmotel_img/abstract-surface-and-textures-of-white-concrete-stone-wall.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  height: 100%;
+  
+}
+h1{
+    color: white;
+    margin: 0px 10px;
+    font-size: 22px;
+    font-weight: 600;
+}
+h2{
+  color: #FF04AF;
+  font-size: 24px;
+  font-weight: 600;
+}
+p{
+  font-size: 18px;
+  font-weight: 400;
+}
+a{
+    margin: 0px 5px;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+a:hover{
+  color: #FF04AF;
+}
+img{
+  border-radius: 10px;
+}
+
+
+.color{
+  color: #FFF;
+  color: #000;
+  color: #FF04AF;
+}
+.justificado{
+  text-align: justify;
+}
+.slide-text{
+  font-size: 50px;
+}
+.title2{
+  font-size: 18px;
+  font-weight: 500;
+}
+.fondo-rosa{
+  background: transparent;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 12px;
+  padding: 10px;
+  color: #fff;
+  border: 2px #FF04AF solid;
+  border-radius: 25px;
+}
 .inicio{
+    margin: 0;
+    height: 100vh;
+    position: relative;
+    z-index: 5;
     background-image: url("fjmotel_img/bg8.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0;
-    height: 100vh;
+}
+.inicio::before{
+  background: rgba(000, 000, 000, .6);
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 .menu{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 .vinculos{
-    margin: 20px 10px;
+    margin: 10px 10px;
 }
 .centrar{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     color: white;
+    height: 80%;
+    position: relative;
 }
 .nosotros{
     display: flex;
@@ -34,45 +114,64 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 .nosotros3{
     margin: 0px 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    text-align: flex-start;
+    width: 30%;
+}
+.nosotros4{
+  text-align: center;
 }
 .habitaciones{
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
+}
+.habitaciones1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 .dos_columnas{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     width: 100%;
+    margin: 0;
 }
 .una_columna{
     display: flex;
     flex-direction: column;
     margin: 20px;
+    width: 600px;
 
 }
 .button{
     display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
 
 }
 .button01{
-    background: blue;
-    border-radius: 15px;
-    margin: 20px;
-    padding: 10px;
-    color: black;
-    box-shadow: 5px 3px #ACB992;
+  font-family: 'Roboto Slab', serif;
+  background: #FF04AF;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid #FF04AF;
+}
+.button01:hover{
+  border: 2px solid #FF04AF;
+  background: #fff;
+  color: #FF04AF;
 }
 .servicios{
     display: flex;
@@ -82,6 +181,16 @@
     background-image: url("fjmotel_img/10.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+}
+.servicios::before{
+  background: rgba(000, 000, 000, .7);
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 .servicios01{
     display: flex;
@@ -89,15 +198,18 @@
     align-items: center;
     width: 20%;
     margin: 20px;
+    position: relative;
+    color: #FFF;
 }
 .img_border{
     display: flex;
-    border: 2px #F473B9 solid;
+    border: 2px #FF04AF solid;
     border-radius: 50%;
     width: 110px;
     height: 110px;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .comentarios{
     display: flex;
@@ -110,21 +222,25 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background: black;
     color: white;
+    background-image: url("fjmotel_img/black_twill.png");
+    position: relative;
+}
+.footer::before{
+  background: rgba(000, 000, 000, .9);
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 .footer1{
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 20%;
-}
-h1{
-    color: white;
-    margin: 0px 10px;
-}
-a{
-    margin: 0px 2px;
+    position: relative;
 }
 .galeria{
     margin: 5px 0px 20px 0px;
@@ -133,9 +249,22 @@ a{
     align-items: center;
     text-align: center;
 }
+.video{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 30px 0px 0px 0px;
+  width: 100%;
+}
+.video1{
+  margin: 0px 20px;
+  border: #FF04AF solid 2px;
+  border-radius: 10px;
+  width: 600px;
+}
 
 .servicios01:hover .img_border{
-    background: #F473B9;
+    background: #FF04AF;
 }
 
 .container {
@@ -233,4 +362,42 @@ a{
   .wrap--half [position="5"] span {
     transform: translateX(0) scale(0.5);
     opacity: 0;
+  }
+
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(0); }
+  
+    15% { transform: translateX(-100%); }
+    30% { transform: translateX(-100%); }
+  
+    35% { transform: translateX(-200%); }
+    50% { transform: translateX(-200%); }
+  
+    55% { transform: translateX(-300%); }
+    70% { transform: translateX(-300%); }
+  
+    75% { transform: translateX(-400%); }
+    90% { transform: translateX(-400%); }
+  
+    95% { transform: translateX(-500%); }
+    100% { transform: translateX(-500%); }
+  }
+
+  /* slide comentarios */
+  .mySlides {display:none}
+  .w3-left, .w3-right, .w3-badge {cursor:pointer}
+  .w3-badge {height:13px;width:13px;padding:0}
+  .w3-hover-white{ 
+    background: transparent;
+    border: #000 2px solid;
+    border-radius: 50%;    
+    margin: 10px;
+    width: 15px;
+    height: 10px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .w3-hover-white:hover{
+    background: #000;
   }

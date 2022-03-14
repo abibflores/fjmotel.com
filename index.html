@@ -285,7 +285,7 @@
             </p>
           </div>
           
-          <div class="w3-content w3-display-container" style="max-width:800px">
+          <div class="Slide__Container" >
             <span class="mySlides">
                 <h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 1
@@ -301,12 +301,10 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 3
                 </h3>
             </span>
-            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-              <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-              <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+            <div class="Dost__Container">
+              <div class="w3-hover-white Dots__Active" onclick="currentDiv(1)"></div>
+              <div class="w3-hover-white" onclick="currentDiv(2)"></div>
+              <div class="w3-hover-white" onclick="currentDiv(3)"></div>
             </div>
           </div>
         <!-- slide comentarios -->
@@ -427,17 +425,19 @@ function currentDiv(n) {
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
+  var dots = document.getElementsByClassName("w3-hover-white");
+
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
+    dots[i].className = dots[i].className.replace(" Dots__Active", "");
   }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className +=  " Dots__Active";
+
 }
   //slide comentarios
   
